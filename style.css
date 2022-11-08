@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Space Mono", monospace;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+  padding: 40px 77px 0px 40px;
+}
+header {
+  font-weight: 700;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  align-items: center;
+  column-gap: 50px;
+}
+main img {
+  width: 100%;
+}
+.content > h1 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  margin-bottom: 36px;
+}
+.content > p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  width: 70%;
+  margin-bottom: 64px;
+}
+.content > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #333333;
+  padding: 24px 43px;
+  text-transform: uppercase;
+}
+footer {
+  text-align: center;
+}
+@media (max-width: 450px) {
+  body {
+    padding: 20px 24px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .content > h1 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+  }
+  .content > p {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    width: 80%;
+  }
+  footer{
+    font-size: 14px;
+  }
+}
